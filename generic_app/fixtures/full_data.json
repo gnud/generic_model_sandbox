@@ -1,0 +1,95 @@
+[
+  {
+    "model": "generic_app.comment",
+    "pk": 1,
+    "fields": {
+      "comm": "Lorem Lipsum1",
+      "content_type": 7,
+      "object_id": 6
+    }
+  },
+  {
+    "model": "generic_app.comment",
+    "pk": 2,
+    "fields": {
+      "comm": "Lorem Lipsum2",
+      "content_type": 8,
+      "object_id": 2
+    }
+  },
+  {
+    "model": "generic_app.comment",
+    "pk": 3,
+    "fields": {
+      "comm": "Lorem Lipsum3",
+      "content_type": 7,
+      "object_id": 3
+    }
+  },
+  {
+    "model": "generic_app.article",
+    "pk": 1,
+    "fields": {
+      "content": "article1"
+    }
+  },
+  {
+    "model": "generic_app.article",
+    "pk": 2,
+    "fields": {
+      "content": "article2"
+    }
+  },
+  {
+    "model": "generic_app.article",
+    "pk": 3,
+    "fields": {
+      "content": "article3"
+    }
+  },
+  {
+    "model": "generic_app.article",
+    "pk": 4,
+    "fields": {
+      "content": "article4"
+    }
+  },
+  {
+    "model": "generic_app.post",
+    "pk": 1,
+    "fields": {
+      "content": "Post1"
+    }
+  },
+  {
+    "model": "generic_app.post",
+    "pk": 2,
+    "fields": {
+      "content": "Post2"
+    }
+  },
+  {
+    "model": "generic_app.commentnormal",
+    "pk": 1,
+    "fields": {
+      "article": 1,
+      "post": null
+    }
+  },
+  {
+    "model": "generic_app.commentnormal",
+    "pk": 2,
+    "fields": {
+      "article": null,
+      "post": 1
+    }
+  },
+  {
+    "model": "generic_app.commentnormal",
+    "pk": 3,
+    "fields": {
+      "article": 1,
+      "post": 1
+    }
+  }
+]

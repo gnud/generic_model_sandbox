@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from generic_app import models
 from generic_app import serializer_fields
+from generic_app import serializer_methods as fn_mixin
 
 
 class ArticleSerializer(serializers.ModelSerializer):
@@ -26,6 +27,17 @@ class CommentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.Comment
+        fields = [
+            'pk',
+            'content'
+        ]
+
+
+class CommentNormalSerializer(fn_mixin.FnsMixin, serializers.ModelSerializer):
+    content = serializers.SerializerMethodField('by_type_content')
+
+    class Meta:
+        model = models.CommentNormal
         fields = [
             'pk',
             'content'

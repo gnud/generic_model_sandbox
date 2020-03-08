@@ -8,3 +8,10 @@ class CommentsViewSet(viewsets.ModelViewSet):
     queryset = default_queryset
     permission_classes = [permissions.IsAuthenticated]
     serializer_class = serializers.CommentSerializer
+
+
+class CommentsNormalViewSet(viewsets.ModelViewSet):
+    default_queryset = models.CommentNormal.objects.all()
+    queryset = default_queryset
+    permission_classes = [permissions.IsAuthenticated]
+    serializer_class = serializers.CommentNormalSerializer

@@ -22,6 +22,7 @@ from generic_app import api
 
 router_v1 = routers.DefaultRouter('app_v1')
 router_v1.register(prefix=r'comment', viewset=api.CommentsViewSet, basename='app_v1-comment')
+router_v1.register(prefix=r'comment2', viewset=api.CommentsNormalViewSet, basename='app_v1-comment-normal')
 
 urlpatterns = [
     path('api/app/v1/', include(router_v1.urls)),
