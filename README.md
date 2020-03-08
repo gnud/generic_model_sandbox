@@ -1,5 +1,19 @@
 # generic_model_sandbox
-Sandbox to test Generic relationships in DRF
+Sandbox to test Generic relationships in DRF vs multiple ForeignKeys
+
+**NOTE**: This project is for research purposes only.
+Don't use in production, use it with caution.
+
+![EE diagram](docs/er_diagram.png)
+
+
+# References:
+
+- [DRF generic-relationships](https://www.django-rest-framework.org/api-guide/relations/#generic-relationships)
+
+- [django-orm-cookbook](https://books.agiliq.com/projects/django-orm-cookbook/en/latest/generic_models.html)
+
+- [Django generic-relations](https://docs.djangoproject.com/en/3.0/ref/contrib/contenttypes/#generic-relations)
 
 # Quick start
 
