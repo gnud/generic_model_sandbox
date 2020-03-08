@@ -17,6 +17,10 @@ class Comment(models.Model):
     content_object = GenericForeignKey('content_type', 'object_id', )
     objects = managers.CommentQSManager.as_manager()
 
+    def __str__(self):
+        content = self.content_object and self.content_object.content.title() or 'n/a'
+        return f"{content}"
+
 
 class Article(models.Model):
     content = models.CharField(max_length=100)
