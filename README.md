@@ -6,6 +6,7 @@ Sandbox to test Generic relationships in DRF
 Single model named Comment having 2 sub models: Article, Post for the content.
 
 DRF API that outputs content field object:
+URL: GET /api/app/v1/comment/
 ```json
 [
     {
@@ -16,14 +17,49 @@ DRF API that outputs content field object:
         "pk": 2,
         "content": {
             "pk": 2,
-            "content": "The fox jumped over the rock"
+            "content": "Post2"
         }
     },
     {
         "pk": 3,
         "content": {
             "pk": 3,
-            "content": "Bob ate some peaches for breakfast"
+            "content": "article3"
+        }
+    }
+]
+```
+
+# Version 2
+
+Model named CommentNormal having 2 sub models: Article, Post using 2 separate related fields,
+with rules one has to be null.
+Content object is determined by serializer method by hand, poorly.
+
+DRF API that outputs content field object:
+URL: GET /api/app/v1/comment2/
+```json
+
+[
+    {
+        "pk": 1,
+        "content": {
+            "pk": 1,
+            "content": "article1"
+        }
+    },
+    {
+        "pk": 2,
+        "content": {
+            "pk": 1,
+            "content": "Post1"
+        }
+    },
+    {
+        "pk": 3,
+        "content": {
+            "pk": 1,
+            "content": "Post1"
         }
     }
 ]
