@@ -1,2 +1,6 @@
-django
-djangorestframework
+Django==3.0.4
+djangorestframework==3.11.0
+
+# debug
+django-debug-toolbar==2.2
+django-extensions==2.2.8
