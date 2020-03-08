@@ -4,6 +4,7 @@ Sandbox to test Generic relationships in DRF
 # Version 1
 
 Single model named Comment having 2 sub models: Article, Post for the content.
+Content is retrieved and automatically determined via RelatedField.  
 
 DRF API that outputs content field object:
 URL: GET /api/app/v1/comment/
